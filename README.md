@@ -27,8 +27,27 @@ You can view the API documentation [here](https://restful-booker.herokuapp.com/a
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository 
+### 1. Clone the Repository
+
+Open your terminal and run:
 
 ```bash
 git clone https://github.com/your-username/restassured-restful-booker.git
 cd restassured-restful-booker
+```
+
+### 2. Run the test
+```bash
+mvn clean test
+```
+
+### 3. View the Reports
+```bash
+mvn allure:serve
+```
+
+
+### 📌 Notes
+- ⚠️ This project uses a public API meant for testing only. Data is not persistent.
+- 🔄 Since the API is shared, booking IDs may change frequently or be overwritten by other users.
+-  Faker library is being used to create fake Booking data, where you can create your own data or import it form excelsutility class.
